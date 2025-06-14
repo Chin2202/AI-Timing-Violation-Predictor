@@ -5,7 +5,6 @@ An AI-powered tool to predict timing violations in VLSI circuits and suggest opt
 ## Features
 - Predicts timing violations using Random Forest
 - Provides optimization suggestions
-- Streamlit web app for easy access
 
 ## Run Locally
 1. Install dependencies:
