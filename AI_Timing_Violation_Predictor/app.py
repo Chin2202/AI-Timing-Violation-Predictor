@@ -6,7 +6,11 @@ from utils.optimization import suggest_optimal_frequency
 st.set_page_config(page_title="AI-Based Timing Violation Predictor", page_icon="⚡")
 st.title("⚡ AI-Based Timing Violation Predictor")
 
-model = joblib.load("models/trained_model.pkl")
+import os
+current_dir = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(current_dir, "models", "trained_model.pkl")
+model = joblib.load(model_path)
+
 
 st.sidebar.header("🔧 Input Parameters")
 
